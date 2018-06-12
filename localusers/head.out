@@ -1,0 +1,15 @@
+==> /etc/passwd <==
+root:x:0:0:root:/root:/bin/bash
+
+==> /etc/hostname <==
+localhost.localdomain
+==> /etc/passwd <==
+root:x:0:0:root:/root:/bin/bash
+
+==> /etc/hostname <==
+localhost.localdomain
+==> /etc/passwd <==
+root:x:0:0:root:/root:/bin/bash
+
+==> /etc/hostname <==
+localhost.localdomain

@@ -1,0 +1,93 @@
+cat /etc/passwd
+sudo cat /etc/shadow
+pwd
+ls
+vim add-local-user.sh 
+echo ${?}
+vim add-local-user.sh 
+gethostname()
+echo ${HOSTNAME}
+vim add-local-user.sh 
+vim add-local-user.sh 
+sudo ./add-local-user.sh 
+su - lukez 
+echo ${?}
+su - epic
+./add-local-user.sh 
+vim add-local-user.sh 
+if [[ "${UID}" -ne 0 ]]; then echo "hello"; 
+[[ "${UID}" -n 0 ]]
+[[ "${UID}" -ne 0 ]]
+echo [[ "${UID}" -ne 0 ]]
+echo UID
+echo ${UID}
+vim add-local-user.sh 
+vim add-local-user.sh 
+./add-local-user.sh 
+vim add-local-user.sh 
+touch add-local-user1.sh 
+vim add-local-user1.sh 
+chmod 755 add-local-user1.sh 
+tail -n10 /var/log/messages
+logger -t "my-script" "Hello from the command line."
+vim ./add-local-user1.sh 
+tail -n10 /var/log/messages
+tail /var/log/messages
+head /var/tmp/passwd.2018-06-13-173676118 
+cat /var/tmp/passwd.2018-06-13-859873212 
+exit
+tail /var/log/messages
+cat /var/tmp/hostname.2018-06-13-657530253 
+exit
+userdel jsmith
+ls /home/ | grep jsmit
+ls /home/ | grep jsmith
+ls /home/ 
+ls -l home
+ls -l /home
+id -u root
+id -u lol
+id -u sshd
+cat /etc/passwd 
+userdel -r walker
+id -u walker
+du /var 
+du -h /var 
+du -h /var | sort -h
+netstat -nutl
+netstat -nutl | grep ':'
+netstat -nutl | grep ':' | awk '{print $3}'
+netstat -nutl | grep ':' | awk '{print $4}'
+netstat -nutl | grep ':' | awk '{print $4}' | awk -F ':' '{print $NF}'
+netstat -nutl | grep ':' | awk '{print $4}' | awk -F ':' '{print $NF}' | sort
+netstat -nutl | grep ':' | awk '{print $4}' | awk -F ':' '{print $NF}' | sort -u
+netstat -nutl | grep ':' | awk '{print $4}' | awk -F ':' '{print $NF}' | sort -n | unqi
+netstat -nutl | grep ':' | awk '{print $4}' | awk -F ':' '{print $NF}' | sort -n | uniq
+netstat -nutl | grep ':' | awk '{print $4}' | awk -F ':' '{print $NF}' | sort -n | uniq -c
+cat /var/log/messages
+cat /var/log/messages 
+cat /var/log/messages | awk '{print $5}'
+cat /var/log/messages | awk '{print $5}' | sort
+cat /var/log/messages | awk '{print $5}' | sort | uniq -c
+cat /var/log/messages | awk '{print $5}' | sort | uniq -c | sort -n
+wc /etc/passwd
+wc -l /etc/passwd
+wc -w /etc/passwd
+wc -b /etc/passwd
+wc -c /etc/passwd
+cat /etc/passwd | sort -tn ':' -k 3
+cat /etc/passwd | sort -t ':' -k 3 -n
+cat /etc/passwd | sort -t ':' -k 3 -n -r
+cat access_log
+cat access_log | cut -d '"' -f2
+cut -d '"' -f 2 access_log
+cut -d '"' -f 2 access_log | cut -d ' ' -f 2 
+# Get the url from access_log
+history
+awk '{print $7}' access_log
+# Get the url from access_log check the number of occurances
+cut -d '"' -f 2 access_log | cut -d ' ' -f 2 | sort | uniq -c 
+# Get the url from access_log check the number of occurances and sort 
+cut -d '"' -f 2 access_log | cut -d ' ' -f 2 | sort | uniq -c | sort -n
+# Get the url from access_log check the number of occurances, sort and print the last 3 lines
+cut -d '"' -f 2 access_log | cut -d ' ' -f 2 | sort | uniq -c | sort -n | tail -3
